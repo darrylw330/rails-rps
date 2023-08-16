@@ -2,6 +2,7 @@ class MovesController < ApplicationController
   def rock
     @random_move = ["rock", "paper", "scissors"].sample
     @outcome = ["won", "lost"].sample
+    # add outcome if tied 
     render ({ :template => "game_templates/play_rock"})
 end
   def paper
